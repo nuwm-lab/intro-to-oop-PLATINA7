@@ -9,11 +9,11 @@ namespace lab2
             InitializeComponent();
         }
 
-        public class polynomial
+        public class Polynomial
         {
             private double a0, a1, a2, a3, e, a, b;
 
-            public polynomial(double _a0, double _a1, double _a2, double _a3, double _e, double _a, double _b)
+            public Polynomial(double _a0, double _a1, double _a2, double _a3, double _e, double _a, double _b)
             {
                 a0 = _a0;
                 a1 = _a1;
@@ -24,7 +24,7 @@ namespace lab2
                 b = _b;
             }
 
-            public double calculate()
+            public double Calculate()
             {
                 double temp = a3 * a * a * a + a2 * a * a + a1 * a + a0;
 
@@ -51,7 +51,7 @@ namespace lab2
             double.TryParse(textBox7.Text, out a);
             double.TryParse(textBox8.Text, out b);
 
-            polynomial first = new polynomial(a0, a1, a2, a3, E, a, b);
+            polynomial first = new Polynomial(a0, a1, a2, a3, E, a, b);
 
             double asff = first.calculate();
             String ff = Convert.ToString(asff);
