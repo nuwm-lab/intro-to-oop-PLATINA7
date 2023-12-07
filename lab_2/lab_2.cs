@@ -51,7 +51,7 @@ namespace lab2
             double.TryParse(textBox7.Text, out a);
             double.TryParse(textBox8.Text, out b);
 
-            polynomial first = new Polynomial(a0, a1, a2, a3, E, a, b);
+            Polynomial first = new Polynomial(a0, a1, a2, a3, E, a, b);
 
             double asff = first.calculate();
             String ff = Convert.ToString(asff);
